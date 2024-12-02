@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const jsx_runtime_1 = require("react/jsx-runtime");
+const react_1 = require("react");
+const client_1 = require("react-dom/client");
+const HomePage_1 = require("@app/HomePage");
+const Plausible_1 = require("@assets/Plausible");
+(0, client_1.createRoot)(document.getElementById("app")).render((0, jsx_runtime_1.jsx)(react_1.StrictMode, { children: (0, jsx_runtime_1.jsx)(HomePage_1.HomePage, {}) }));
+console.log(env);
+(0, Plausible_1.plausible)("pageview");

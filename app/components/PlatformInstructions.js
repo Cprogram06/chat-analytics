@@ -1,0 +1,49 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.PlatformInstructions = void 0;
+const jsx_runtime_1 = require("react/jsx-runtime");
+const react_1 = require("react");
+// Discord
+const discord_channels_png_1 = __importDefault(require("@assets/images/platforms/discord/instructions/discord_channels.png"));
+const discord_export_gif_1 = __importDefault(require("@assets/images/platforms/discord/instructions/discord_export.gif"));
+const discord_format_png_1 = __importDefault(require("@assets/images/platforms/discord/instructions/discord_format.png"));
+// Facebook
+const deselect_png_1 = __importDefault(require("@assets/images/platforms/messenger/instructions/deselect.png"));
+const format_png_1 = __importDefault(require("@assets/images/platforms/messenger/instructions/format.png"));
+const messages_png_1 = __importDefault(require("@assets/images/platforms/messenger/instructions/messages.png"));
+const request_png_1 = __importDefault(require("@assets/images/platforms/messenger/instructions/request.png"));
+const tab_png_1 = __importDefault(require("@assets/images/platforms/messenger/instructions/tab.png"));
+// Telegram
+const telegram_dots_png_1 = __importDefault(require("@assets/images/platforms/telegram/instructions/telegram_dots.png"));
+const telegram_export_gif_1 = __importDefault(require("@assets/images/platforms/telegram/instructions/telegram_export.gif"));
+const telegram_format_png_1 = __importDefault(require("@assets/images/platforms/telegram/instructions/telegram_format.png"));
+const telegram_no_media_png_1 = __importDefault(require("@assets/images/platforms/telegram/instructions/telegram_no_media.png"));
+// WhatsApp
+const whatsapp_android_no_media_png_1 = __importDefault(require("@assets/images/platforms/whatsapp/instructions/whatsapp_android_no_media.png"));
+const whatsapp_dots_png_1 = __importDefault(require("@assets/images/platforms/whatsapp/instructions/whatsapp_dots.png"));
+const whatsapp_ios_export_png_1 = __importDefault(require("@assets/images/platforms/whatsapp/instructions/whatsapp_ios_export.png"));
+const whatsapp_ios_no_media_png_1 = __importDefault(require("@assets/images/platforms/whatsapp/instructions/whatsapp_ios_no_media.png"));
+// All assets included in this file are NOT inlined
+const DiscordInstructions = () => {
+    return ((0, jsx_runtime_1.jsx)(jsx_runtime_1.Fragment, { children: (0, jsx_runtime_1.jsxs)("ol", { children: [(0, jsx_runtime_1.jsxs)("li", { children: ["Download the latest version of", " ", (0, jsx_runtime_1.jsx)("a", { href: "https://github.com/Tyrrrz/DiscordChatExporter/releases/latest", target: "_blank", children: "DiscordChatExporter" }), ". You will need a Windows PC or use the CLI (Linux/Mac)."] }), (0, jsx_runtime_1.jsxs)("li", { children: ["You will have to obtain a bot token or use your account's token. Refer to", " ", (0, jsx_runtime_1.jsx)("a", { href: "https://github.com/Tyrrrz/DiscordChatExporter/blob/master/.docs/Getting-started.md#using-the-gui", target: "_blank", children: "this guide" }), " ", "for more information."] }), (0, jsx_runtime_1.jsxs)("li", { children: ["Select the channels you want to export.", (0, jsx_runtime_1.jsx)("img", { src: discord_channels_png_1.default })] }), (0, jsx_runtime_1.jsx)("li", { children: "Press the yellow button on the bottom right corner." }), (0, jsx_runtime_1.jsxs)("li", { children: ["Select the format \"JSON\".", (0, jsx_runtime_1.jsx)("img", { src: discord_format_png_1.default })] }), (0, jsx_runtime_1.jsxs)("li", { children: ["Go ahead and ", (0, jsx_runtime_1.jsx)("b", { children: "click Export" }), ".", (0, jsx_runtime_1.jsx)("img", { src: discord_export_gif_1.default })] })] }) }));
+};
+const MessengerInstructions = () => {
+    return ((0, jsx_runtime_1.jsx)(jsx_runtime_1.Fragment, { children: (0, jsx_runtime_1.jsxs)("ol", { children: [(0, jsx_runtime_1.jsxs)("li", { children: ["Head to", (0, jsx_runtime_1.jsxs)("b", { children: [" ", (0, jsx_runtime_1.jsx)("a", { href: "https://www.facebook.com/dyi", target: "_blank", children: "https://www.facebook.com/dyi" })] }), "."] }), (0, jsx_runtime_1.jsxs)("li", { children: ["In the \"Request a download\" tab, change the format to ", (0, jsx_runtime_1.jsx)("b", { children: "JSON" }), ", media quality to ", (0, jsx_runtime_1.jsx)("b", { children: "Low" }), " ", "(since media files are not analyzed) and Date range to ", (0, jsx_runtime_1.jsx)("b", { children: "All time" }), " (if you want).", (0, jsx_runtime_1.jsx)("img", { src: tab_png_1.default }), (0, jsx_runtime_1.jsx)("img", { src: format_png_1.default })] }), (0, jsx_runtime_1.jsxs)("li", { children: ["Click to deselect all, then only select ", (0, jsx_runtime_1.jsx)("b", { children: "Messages" }), ".", (0, jsx_runtime_1.jsx)("img", { src: deselect_png_1.default }), (0, jsx_runtime_1.jsx)("img", { src: messages_png_1.default })] }), (0, jsx_runtime_1.jsxs)("li", { children: ["At the bottom of the page, click ", (0, jsx_runtime_1.jsx)("b", { children: "Request a download" }), ".", (0, jsx_runtime_1.jsx)("img", { src: request_png_1.default })] }), (0, jsx_runtime_1.jsxs)("li", { children: ["Now wait until the data is ready (may take a day or two), you can find it in the \"Available files\" tab. Extract the ZIP you downloaded and navigate to the folder ", (0, jsx_runtime_1.jsx)("code", { children: "messages/inbox/" }), " and find the chat you want to analyze."] })] }) }));
+};
+const TelegramInstructions = () => ((0, jsx_runtime_1.jsx)(jsx_runtime_1.Fragment, { children: (0, jsx_runtime_1.jsxs)("ol", { children: [(0, jsx_runtime_1.jsxs)("li", { children: [(0, jsx_runtime_1.jsxs)("b", { children: ["Install", " ", (0, jsx_runtime_1.jsx)("a", { href: "https://desktop.telegram.org", target: "_blank", children: "Telegram Desktop" }), " "] }), "on your computer."] }), (0, jsx_runtime_1.jsxs)("li", { children: [(0, jsx_runtime_1.jsx)("b", { children: "Open the Telegram Desktop application" }), " and ", (0, jsx_runtime_1.jsx)("b", { children: "login using your phone" }), "."] }), (0, jsx_runtime_1.jsxs)("li", { children: ["Go to the chat you intend to analyze and ", (0, jsx_runtime_1.jsx)("b", { children: "tap on the 3 dots" }), " in the top right corner.", (0, jsx_runtime_1.jsx)("img", { src: telegram_dots_png_1.default })] }), (0, jsx_runtime_1.jsxs)("li", { children: ["Click on ", (0, jsx_runtime_1.jsx)("b", { children: "Export chat history" }), "."] }), (0, jsx_runtime_1.jsxs)("li", { children: [(0, jsx_runtime_1.jsx)("b", { children: "Unselect all boxes" }), ", media files are not analyzed.", (0, jsx_runtime_1.jsx)("img", { src: telegram_no_media_png_1.default })] }), (0, jsx_runtime_1.jsxs)("li", { children: ["Change the format to ", (0, jsx_runtime_1.jsx)("b", { children: "Machine-readable JSON" }), ".", (0, jsx_runtime_1.jsx)("img", { src: telegram_format_png_1.default })] }), (0, jsx_runtime_1.jsxs)("li", { children: ["Go ahead and ", (0, jsx_runtime_1.jsx)("b", { children: "click Export" }), ".", (0, jsx_runtime_1.jsx)("img", { src: telegram_export_gif_1.default })] })] }) }));
+const WhatsAppInstructions = () => {
+    const [device, setDevice] = (0, react_1.useState)("ios");
+    // Do we want to add these links?
+    // https://faq.whatsapp.com/1180414079177245/?locale=en_US&cms_platform=android
+    // https://faq.whatsapp.com/902477924463699/?locale=en_US&cms_platform=iphone
+    return ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsxs)("div", { style: { marginLeft: 10 }, children: [(0, jsx_runtime_1.jsx)("button", { className: "DeviceButton" + (device === "ios" ? " DeviceButton--active" : ""), onClick: () => setDevice("ios"), children: "iOS" }), (0, jsx_runtime_1.jsx)("button", { className: "DeviceButton" + (device === "android" ? " DeviceButton--active" : ""), onClick: () => setDevice("android"), children: "Android" })] }), (0, jsx_runtime_1.jsxs)("ol", { children: [(0, jsx_runtime_1.jsx)("li", { children: "Open WhatsApp in your phone." }), device === "ios" && ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsxs)("li", { children: ["Go to the chat you intend to analyze and ", (0, jsx_runtime_1.jsx)("b", { children: "tap on the contact name or group subject" }), "."] }), (0, jsx_runtime_1.jsxs)("li", { children: [(0, jsx_runtime_1.jsx)("b", { children: "Press Export chat" }), ".", (0, jsx_runtime_1.jsx)("img", { src: whatsapp_ios_export_png_1.default })] })] })), device === "android" && ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsxs)("li", { children: ["Go to the chat you intend to analyze and ", (0, jsx_runtime_1.jsx)("b", { children: "click on the 3 dots" }), " in the top right corner.", (0, jsx_runtime_1.jsx)("img", { src: whatsapp_dots_png_1.default })] }), (0, jsx_runtime_1.jsxs)("li", { children: ["In the context menu, ", (0, jsx_runtime_1.jsx)("b", { children: "press More" }), " and then ", (0, jsx_runtime_1.jsx)("b", { children: "Export chat" }), "."] })] })), (0, jsx_runtime_1.jsxs)("li", { children: ["When asked to export with or without media, ", (0, jsx_runtime_1.jsx)("b", { children: "select Without Media" }), ". Media files are not analyzed.", (0, jsx_runtime_1.jsx)("img", { src: device === "ios" ? whatsapp_ios_no_media_png_1.default : whatsapp_android_no_media_png_1.default })] }), (0, jsx_runtime_1.jsx)("li", { children: "Save the file and transfer it to this device, you will need it for the next step." })] })] }));
+};
+exports.PlatformInstructions = {
+    discord: (0, jsx_runtime_1.jsx)(DiscordInstructions, {}),
+    messenger: (0, jsx_runtime_1.jsx)(MessengerInstructions, {}),
+    telegram: (0, jsx_runtime_1.jsx)(TelegramInstructions, {}),
+    whatsapp: (0, jsx_runtime_1.jsx)(WhatsAppInstructions, {}),
+};
